@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JordanShoes - Home</title>
+  <link rel="shortcut icon" href="/assets/air-jordan.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <nav>
+        <a href="#"> Ganhe R$ 10,00 de desconto no frete</a>
+      </nav>
+      <h2>JordanShoes</h2>
+    </header>
+
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-text" id="typed-strings">
+        <h1>A melhor loja de Jordan</h1>
+
+        <p id="typed"></p>
+      </div>
+    </div>
+
+    <main>
+      <div class="card-wrapper--top">
+        <h2>Destaques</h2>
+        <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo ilimitado.</p>
+      </div>
+      <div class="card-wrapper">
+        <span>
+          <img src="/assets/1.png" alt="tênis Jordan verde com cadarços rosas e listra nike preta">
+        </span>
+
+        <span>
+          <img src="/assets/2.png" alt="tênis Jordan branco com detalhes roxo e verde com cadarços branco">
+        </span>
+
+        <span>
+          <img src="/assets/3.png" alt="tênis Jordan branco com detalhes roxo escuro e cadarços branco">
+        </span>
+
+        <span>
+          <img src="/assets/4.png" alt="tênis Jordan cinza claro com cadarços preto">
+        </span>
+
+        <span>
+          <img src="/assets/5.png" alt="tênis Jordan preto com detalhes rosa e branco com cadarços branco">
+        </span>
+
+        <span>
+          <img src="/assets/6.png" alt="tênis Jordan branco com detalhes em laranja com cadarços branco">
+        </span>
+
+        <span>
+          <img src="/assets/7.png" alt="tênis Jordan branco com detales cinza claro">
+        </span>
+
+        <span>
+          <img src="/assets/8.png" alt="tênis Jordan branco e preto com cadarços pretos">
+        </span>
+      </div>
+    </main>
+
+    <footer>
+      <p> 2022 - Todos os direitos reservados.</p>
+      <p> <a target="_blank" href="https://icons8.com/icon/45774/air-jordan">Air Jordan</a> icon by <a target="_blank"
+          href="https://icons8.com">Icons8</a></p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["O tênis Jordan", "é fruto de uma velha e forte parceria", "entre a Nike", "e o jogador", "Michael Jordan"],
+      typeSpeed: 45
+    });
+  </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('header, hero-main, nav ', { delay: 100 });
+    ScrollReveal().reveal('nav, .card-wrapper, .card-wrapper--top>h2, .card-wrapper--top>p, .hero', { delay: 200 });
+    ScrollReveal().reveal('span, .hero-text', { delay: 300 });
+  </script>
+</body>
+
+</html>
